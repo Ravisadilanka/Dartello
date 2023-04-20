@@ -1,0 +1,39 @@
+.h-wrapper{
+    margin: 100px;
+    padding: 0 0 0 30px;
+}
+
+.h-wrapper h1{
+    font-size: 98px;
+    line-height: 100px;
+}
+
+.h-wrapper h1 span{
+    color: #AD0000;
+}
+
+.h-wrapper p {
+    line-height: 20px;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.h-wrapper p span{
+    font-weight: 700;
+}
+
+.h-wrapper button{
+    cursor: pointer;
+    background-color: #AD0000;
+    color: white;
+    padding: 15px 20px;
+    font-size: 15px ;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    letter-spacing: 3px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 100px;
+}
