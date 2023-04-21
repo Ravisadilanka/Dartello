@@ -1,0 +1,43 @@
+.f-wrapper{
+    margin: 100px 150px;
+}
+
+.f-stats{
+    display: flex;
+}
+
+.f-stat{
+    display: flex;
+    align-items: center;
+    width: 25%;
+    justify-content: center;
+    text-align: center;
+}
+
+.f-stat h1 span{
+    font-size: 69px;
+    font-family: "Roboto";
+    color: #AD0000;
+}
+
+.f-stat span {
+    font-size: 69px;
+    font-family: "Roboto";
+    font-weight: 700;
+    color: #AD0000;
+}
+
+.f-stat-name{
+    display: flex;
+    align-items: center;
+    width: 25%;
+    justify-content: center;
+    text-align: center;
+}
+
+.f-stat-name h1{
+    font-family: "Roboto Slab";
+    font-size: 19px;
+    color: #222222;
+    font-weight: 400;
+}

@@ -1,5 +1,5 @@
 .p-wrapper{
-    margin: -50px 120px;
+    margin: -50px 150px;
 }
 
 .p-wrapper .p-header{
@@ -47,10 +47,82 @@
     transition-duration: 300ms;
 }
 
+.p-card {
+    margin-bottom: 50px;
+}
+
 .p-body h1{
     font-size: 26px;
     font-weight: 600;
     font-family: 'Poppins';
     color: #222222;
     text-align: center;
+}
+
+.p-body a{
+    text-decoration: none;
+    color: #222222;
+}
+
+.p-body a svg{
+    color: #AD0000;
+    position: relative;
+    top: -250px;
+    left: 300px;
+}
+
+a h2{
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-style: normal;
+    line-height: 1.5em;
+    width: 300px;
+}
+
+.p-count-num {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 45px;
+    margin-bottom: -15px;
+}
+.p-count-text {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.p-count-num span{
+    background: #AD0000;
+    color: white;
+    font-family: "Poppins";
+    font-size: 40px;
+    font-weight: 400;
+    width: 25%;
+    text-align: center;
+}
+
+.p-count-text span{
+    background: #AD0000;
+    color: white;
+    font-family: "Poppins";
+    font-size: 15px;
+    width: 25%;
+    text-align: center;
+}
+
+.p-body span{
+    background: #ffffff;
+    color: #AD0000;
+    position: relative;
+    top: -325px;
+    left: 10px;
+    border-radius: 20px;
+    padding: 0.4em 0.8em;
+    font-size: .87em;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: normal;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.15);
 }
