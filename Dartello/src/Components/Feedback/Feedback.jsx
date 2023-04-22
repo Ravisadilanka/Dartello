@@ -1,6 +1,8 @@
 import React from 'react'
 import CountUp from 'react-countup'
 import './Feedback.css'
+import { FaRegThumbsUp } from 'react-icons/fa'
+import 'https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js';
 
 function Feedback() {
   return (
@@ -38,8 +40,53 @@ function Feedback() {
                 <h1>Customer Satisfaction Rate</h1>
             </div>
         </div>
+
+        <div className="f-reviews">
+            <div className="review-left">
+                <div className="row-1">
+                    <h3>Customer reviews</h3>
+                    <span></span>
+                </div>
+
+                <div className="row-2">
+                    <h1>" Fast Delivery. Works As Described. Thank You Seller. A+++++ "</h1>
+                </div>
+
+                <div className="row-3">
+                    <h3>Javier Martinez</h3>
+                    <span>CEO at Javier Industrial</span>
+                </div>
+
+                <FaRegThumbsUp size={250}/>
+
+            </div>
+            <div className="review-right">
+
+            </div>
+        </div>
     </section>
   )
+
+// const animatedImage = document.querySelector('.f-stat')
+
+// const animatedImageTimeline = new ScrollTimeline({
+//     scrollOffset: [
+//         {target: animatedImage, edge: 'end', threshold: '1'},
+//         {target: animatedImage, edge: 'start', threshold: '1'},
+//     ]
+// })
+
+// animatedImage.animate(
+//     {
+//         transform: ['translateY(-200px)', "translateY(0)"]
+//     },
+//     {
+//         opacity: ["0", "1"],
+//         duration: 1,
+//         easing: 'linear',
+//         timeline: animatedImageTimeline,
+//     }
+// )
 }
 
 export default Feedback

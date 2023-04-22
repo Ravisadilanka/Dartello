@@ -1,9 +1,11 @@
 .f-wrapper{
-    margin: 100px 150px;
+    /* margin: 100px 150px; */
 }
 
 .f-stats{
     display: flex;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 .f-stat{
@@ -40,4 +42,91 @@
     font-size: 19px;
     color: #222222;
     font-weight: 400;
+}
+
+.f-reviews{
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-top: 100px;
+    height: 600px;
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #FFFFFF 0%, #F2F6F5 100%);
+}
+
+.review-left{
+    width: 50.467%;
+    padding: 30px 120px 30px 30px;
+}
+
+.review-left svg {
+    opacity: 0.06;
+    position: relative;
+    top: -245px;
+    left: 180px;
+}
+
+.row-1{
+    display: flex;
+    align-items: center;
+    width: 248px;
+    margin-bottom: 10px;
+}
+
+.row-1 h3{
+    color: #AD0000;
+    font-family: "Inter", Sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    letter-spacing: 3px;
+    margin-right: 10px;
+    animation: fadeIn2 1s ease-in-out;
+}
+
+.row-1 span {
+    display: block;
+    content: "";
+    border-bottom: 0;
+    flex-grow: 1;
+    border-top: 1px solid #AD0000;
+    animation: fadeIn2 1s ease-in-out;
+}
+
+.row-2{
+    width: 70%;
+    margin-bottom: 15px;
+}
+
+.row-2 h1 {
+    color: #222222;
+    font-family: "Inter", Sans-serif;
+    font-size: 46px;
+    font-weight: 700;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.row-3 h3{
+    color: #222222;
+    font-family: "Inter", Sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.row-3 span {
+    color: #222222;
+    font-family: "Inter", Sans-serif;
+    font-size: 13px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
