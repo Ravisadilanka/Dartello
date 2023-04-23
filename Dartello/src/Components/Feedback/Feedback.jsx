@@ -2,7 +2,12 @@ import React from 'react'
 import CountUp from 'react-countup'
 import './Feedback.css'
 import { FaRegThumbsUp } from 'react-icons/fa'
-import 'https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js';
+import {motion} from 'framer-motion'
+import {Swiper, SwiperSlide, useSwiper} from 'swiper/react'
+import comments from '../Data/Comments'
+import { sliderSettings } from '../Common/common'
+import { RiStarSFill } from 'react-icons/ri'
+import { SiEbay } from 'react-icons/si'
 
 function Feedback() {
   return (
@@ -43,17 +48,14 @@ function Feedback() {
 
         <div className="f-reviews">
             <div className="review-left">
-                <div className="row-1">
-                    <h3>Customer reviews</h3>
-                    <span></span>
-                </div>
+                <AnimateRow1 />
 
                 <div className="row-2">
-                    <h1>" Fast Delivery. Works As Described. Thank You Seller. A+++++ "</h1>
+                    <AnimateH1 />
                 </div>
 
                 <div className="row-3">
-                    <h3>Javier Martinez</h3>
+                    <h3 an>Javier Martinez</h3>
                     <span>CEO at Javier Industrial</span>
                 </div>
 
@@ -61,32 +63,67 @@ function Feedback() {
 
             </div>
             <div className="review-right">
-
+                <Swiper {...sliderSettings}>
+                    {
+                        comments.map((com, i)=>(
+                            <SwiperSlide key={i}>
+                                <div className="com-head">
+                                    <div className="com-img">
+                                        <img src={com.img} alt="" />
+                                    </div>
+                                    <div className="com-details">
+                                        <h3>{com.name}</h3>
+                                        <span>
+                                            <li><RiStarSFill /></li>
+                                            <li><RiStarSFill /></li>
+                                            <li><RiStarSFill /></li>
+                                            <li><RiStarSFill /></li>
+                                            <li><RiStarSFill /></li>
+                                        </span>
+                                        <p>{com.userName}</p>
+                                    </div>
+                                    <div className="ebay-logo">
+                                        <SiEbay size={20}/>
+                                    </div>
+                                </div>
+                                <div className="com-body">
+                                    <p>{com.comment}</p>
+                                </div>
+                            </SwiperSlide>
+                        ))
+                    }
+                </Swiper>
             </div>
         </div>
     </section>
   )
+}
 
-// const animatedImage = document.querySelector('.f-stat')
+function AnimateH1() {
+    return(
+        <motion.div
+            initial ={{opacity: 0, transform: 'translateY(-200px)'}}
+            whileInView={{opacity: 1, transform: 'translateY(0px)'}}
+            transition={{duration: 0.6}}
+        >
+            <h1 style={{fontSize:"46px"}}>" Fast Delivery. Works As Described. Thank You Seller. A+++++ "</h1>
+        </motion.div>
+    )
+}
 
-// const animatedImageTimeline = new ScrollTimeline({
-//     scrollOffset: [
-//         {target: animatedImage, edge: 'end', threshold: '1'},
-//         {target: animatedImage, edge: 'start', threshold: '1'},
-//     ]
-// })
-
-// animatedImage.animate(
-//     {
-//         transform: ['translateY(-200px)', "translateY(0)"]
-//     },
-//     {
-//         opacity: ["0", "1"],
-//         duration: 1,
-//         easing: 'linear',
-//         timeline: animatedImageTimeline,
-//     }
-// )
+function AnimateRow1(){
+    return(
+        <motion.div
+            initial ={{opacity: 0, transform: "translateY(-100px)"}}
+            whileInView={{opacity: 1, transform: 'translateY(0px)'}}
+            transition={{duration: 0.6}}
+        >
+            <div className="row-1">
+                    <h3>Customer reviews</h3>
+                    <span></span>
+            </div>
+        </motion.div>
+    )
 }
 
 export default Feedback

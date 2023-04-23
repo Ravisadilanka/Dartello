@@ -4,15 +4,22 @@ import { FaLongArrowAltRight } from 'react-icons/fa'
 import data from './../Data/Data'
 import { AiOutlineHeart } from 'react-icons/ai'
 import Countdown from 'react-countdown'
+import {motion} from 'framer-motion'
 
 function Products() {
     const Completionist = () => <span>Sale Ended!</span>;
   return (
     <section className='p-wrapper'>
         <div className="p-header">
-            <span>
-                <h2>Shop By Category</h2>
-            </span>
+            <motion.div
+                initial ={{opacity: 0, transform: "translateY(-100px)"}}
+                whileInView={{opacity: 1, transform: 'translateY(0px)'}}
+                transition={{duration: 0.6}}
+            >
+                <span>
+                    <h2>Shop By Category</h2>
+                </span>
+            </motion.div>
             <span>
                 <a href="">BROWSE ALL CATEGORIES</a>
                 <FaLongArrowAltRight size={15}/>
@@ -54,9 +61,15 @@ function Products() {
         </div>
         
         <div className="p-header">
-            <span>
-                <h2>New Arrivals</h2>
-            </span>
+            <motion.div
+                initial ={{opacity: 0, transform: "translateY(-100px)"}}
+                whileInView={{opacity: 1, transform: 'translateY(0px)'}}
+                transition={{duration: 0.6}}
+            >
+                <span>
+                    <h2>New Arrivals</h2>
+                </span>
+            </motion.div>
             <span>
                 <a href="">BROWSE ALL NEW ARRIVALS</a>
                 <FaLongArrowAltRight size={15}/>
@@ -77,9 +90,15 @@ function Products() {
         </div>
 
         <div className="p-header">
-            <span>
-                <h2>Popular Products</h2>
-            </span>
+            <motion.div
+                initial ={{opacity: 0, transform: "translateY(-100px)"}}
+                whileInView={{opacity: 1, transform: 'translateY(0px)'}}
+                transition={{duration: 0.6}}
+            >
+                <span>
+                    <h2>Popular Products</h2>
+                </span>
+            </motion.div>
             <span>
                 <a href="">BROWSE ALL Popular Products</a>
                 <FaLongArrowAltRight size={15}/>
@@ -101,9 +120,15 @@ function Products() {
         </div>
 
         <div className="p-header">
-            <span>
-                <h2>Flash Sale Products</h2>
-            </span>
+            <motion.div
+                initial ={{opacity: 0, transform: "translateY(-100px)"}}
+                whileInView={{opacity: 1, transform: 'translateY(0px)'}}
+                transition={{duration: 0.6}}
+            >
+                <span>
+                    <h2>Flash Sale Products</h2>
+                </span>
+            </motion.div>
             <span>
                 <a href="">BROWSE ALL Flash Sale Products</a>
                 <FaLongArrowAltRight size={15}/>
