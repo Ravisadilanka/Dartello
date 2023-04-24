@@ -5,6 +5,7 @@ import './App.css'
 import Products from './Components/Products/Products'
 import Feedback from './Components/Feedback/Feedback'
 import Company from './Components/Company/Company'
+import Services from './Components/Services/Services'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <Products />
         <Feedback />
         <Company />
+        <Services />
     </div>
   )
 }

@@ -1,0 +1,22 @@
+.s-wrapper{
+    padding: 0 150px;
+    margin-top: 150px;
+    color: #AD0000;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.s-wrapper div {
+    display: flex;
+    width: 200px;
+    padding: 30px;
+    align-items: center;
+    text-align: center;
+}
+
+.s-wrapper h4{
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 10px;
+    text-align: center;
+}
