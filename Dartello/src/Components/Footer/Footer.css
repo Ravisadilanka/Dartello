@@ -1,0 +1,132 @@
+.footer-wrapper{
+    background-color: rgb(242, 246, 245);
+    padding: 0 150px;
+    margin-top: 22px;
+    padding-bottom: 20px;
+}
+
+.footer-head{
+    display: flex;
+    gap: 100px;
+}
+
+.footer-left{
+    display: flex;
+}
+
+.col-1, .col-2, .col-3 {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.col-1 a, .col-2 a, .col-3 a{
+    color: rgb(85, 85, 85);
+    text-decoration: none;
+    padding: 8px;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row-1{
+    gap: 5px;
+    padding: 50px;
+}
+
+.row-1 input{
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(222, 222, 222);
+    padding: 11px;
+    margin-left: 50px;
+    width: 250px;
+}
+
+.row-1 button{
+    background-color: rgb(173, 0, 0);
+    color: rgb(255, 255, 255);
+    border-color: rgb(173, 0, 0);
+    font-family: Inter, sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    letter-spacing: 3px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 0px;
+    min-height: 40px;
+    text-align: center;
+    padding: 12px 24px;
+    border-radius: 3px;
+}
+
+.row-2 {
+    margin-left: 90px;
+}
+
+.row-2 a {
+    margin-top: -20px;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.row-2 :nth-child(1) svg{
+    background-color: #3B5998;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.row-2 :nth-child(2) svg{
+    background-color: #BD081C;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.row-2 :nth-child(3) svg{
+    background-color: #69727D;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.row-2 :nth-child(4) svg{
+    background-color: #CD201F;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.row-2 :nth-child(5) svg{
+    background-color: #25D366;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.footer-body {
+    gap: 200px;
+    padding-top: 50px;
+    display: flex;
+}
+
+.footer-body p{
+    padding-left: 30px;
+    font-size: 13px;
+    color: #222222;
+}
+
+.footer-body img{
+    width: 135px;
+    height: 30px;
+}
+
+.footer-body span img{
+    width: 46px;
+    margin-right: 10px;
+}

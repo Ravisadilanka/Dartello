@@ -56,10 +56,25 @@ function Feedback() {
 
         <div className="f-reviews">
             <div className="review-left">
-                <AnimateRow1 />
+                <motion.div
+                    initial ={{opacity: 0, transform: "translateY(-100px)"}}
+                    whileInView={{opacity: 1, transform: 'translateY(0px)'}}
+                    transition={{duration: 0.6}}
+                >
+                    <div className="row-1">
+                            <h3>Customer reviews</h3>
+                            <span></span>
+                    </div>
+                </motion.div>
 
                 <div className="row-2">
-                    <AnimateH1 />
+                    <motion.div
+                        initial ={{opacity: 0, transform: 'translateY(-200px)'}}
+                        whileInView={{opacity: 1, transform: 'translateY(0px)'}}
+                        transition={{duration: 0.6}}
+                    >
+                        <h1 >" Fast Delivery. Works As Described. Thank You Seller. A+++++ "</h1>
+                    </motion.div>
                 </div>
 
                 <div className="row-3">
@@ -107,31 +122,5 @@ function Feedback() {
   )
 }
 
-function AnimateH1() {
-    return(
-        <motion.div
-            initial ={{opacity: 0, transform: 'translateY(-200px)'}}
-            whileInView={{opacity: 1, transform: 'translateY(0px)'}}
-            transition={{duration: 0.6}}
-        >
-            <h1 style={{fontSize:"46px"}}>" Fast Delivery. Works As Described. Thank You Seller. A+++++ "</h1>
-        </motion.div>
-    )
-}
-
-function AnimateRow1(){
-    return(
-        <motion.div
-            initial ={{opacity: 0, transform: "translateY(-100px)"}}
-            whileInView={{opacity: 1, transform: 'translateY(0px)'}}
-            transition={{duration: 0.6}}
-        >
-            <div className="row-1">
-                    <h3>Customer reviews</h3>
-                    <span></span>
-            </div>
-        </motion.div>
-    )
-}
 
 export default Feedback

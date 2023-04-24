@@ -6,6 +6,7 @@ import Products from './Components/Products/Products'
 import Feedback from './Components/Feedback/Feedback'
 import Company from './Components/Company/Company'
 import Services from './Components/Services/Services'
+import Footer from './Components/Footer/Footer'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
         <Feedback />
         <Company />
         <Services />
+        <Footer />
     </div>
   )
 }
