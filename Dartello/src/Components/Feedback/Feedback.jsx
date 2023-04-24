@@ -3,13 +3,21 @@ import CountUp from 'react-countup'
 import './Feedback.css'
 import { FaRegThumbsUp } from 'react-icons/fa'
 import {motion} from 'framer-motion'
-import {Swiper, SwiperSlide, useSwiper} from 'swiper/react'
 import comments from '../Data/Comments'
-import { sliderSettings } from '../Common/common'
 import { RiStarSFill } from 'react-icons/ri'
 import { SiEbay } from 'react-icons/si'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 
 function Feedback() {
+    var settings = {
+        autoplay: true,
+        autoplaySpeed: 3000,
+        dots: false,
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1}
   return (
     <section className="f-wrapper">
         <div className="f-stats">
@@ -63,10 +71,10 @@ function Feedback() {
 
             </div>
             <div className="review-right">
-                <Swiper {...sliderSettings}>
+                <Slider {...settings}>
                     {
                         comments.map((com, i)=>(
-                            <SwiperSlide key={i}>
+                            <div className='com' key={i}>
                                 <div className="com-head">
                                     <div className="com-img">
                                         <img src={com.img} alt="" />
@@ -89,10 +97,10 @@ function Feedback() {
                                 <div className="com-body">
                                     <p>{com.comment}</p>
                                 </div>
-                            </SwiperSlide>
+                            </div>
                         ))
                     }
-                </Swiper>
+                </Slider>
             </div>
         </div>
     </section>
