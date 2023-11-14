@@ -13,7 +13,7 @@ function Navbar() {
         <section className="n-wrapper">
             <div className="n-left">
                 <img src="./logo.png" alt="logo" />
-                <a href="">Home</a>
+                <a href="/">Home</a>
                 <a onClick={()=> setDropDown((prev) => !prev)}>Shop <MdArrowDropDown /></a>
                 <a href="">My Account</a>
                 <a href="">About Us</a>

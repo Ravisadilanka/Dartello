@@ -6,7 +6,7 @@ const data = [
         category: 'Home Lighting',
         newArrival: false,
         popular: false,
-        flashSale: false,
+        flashSale: true,
         img: './product.jpeg'
     },
     {
